@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #fffaf4;
 }
 
 .App-logo {
@@ -14,14 +15,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -35,4 +34,129 @@
   to {
     transform: rotate(360deg);
   }
+}
+.image-container {
+  display: flex;
+  justify-content: center; /* Centers images horizontally */
+  align-items: center;     /* Aligns images vertically */
+  gap: 10px;               /* Adjust the space between images */
+}
+
+.image-container img {
+  width: 30ex;  /* Set the desired width */
+  height: 40ex; /* Set the desired height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.Photo-album .image-container img{
+  width: 18ex;  /* Set the desired width */
+  height: 20ex; /* Set the desired height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.Photo-album .image-border{
+  border: none;
+  padding: 1%;
+  background-color:#ffeff8;
+}
+
+.Photo-album{
+  border: 1px solid #000; /* Set the border width and color */
+  padding: 2%;
+  background-color:#ffeff8;
+}
+
+.image-border{
+  border: 1px solid #000; /* Set the border width and color */
+  padding: 2%;
+  background-color:#ffeff8;
+}
+
+.banner{
+  display: flex;
+  justify-content: center; /* Centers images horizontally */
+  align-items: center;     /* Aligns images vertically */
+  width: 100%;
+}
+
+.banner img{
+  width: 100%;  /* Set the desired width */
+  height: 42.75ex; /* Set the desired height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.navbar {
+  display: flex;
+  font-family: Agrandir;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  padding-top: 0%;
+  padding-bottom: 2%;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 75px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 25px;
+}
+
+a:link { 
+  text-decoration: none; 
+  color: #000;
+} 
+a:visited { 
+  text-decoration: none;
+  color: #000; 
+} 
+a:hover { 
+  text-decoration: none; 
+  color: rgb(137, 129, 105)
+} 
+a:active { 
+  text-decoration: none;
+  color: rgb(137, 129, 105)
+}
+
+.Order{
+  height:100px;
+  width:225px;
+  border-radius: 60px;
+  background-color:#ffeff8;
+  border: 1px solid #000;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.Order a{
+  font-size: xx-large;
+  font-family: Agrandir;
+}
+
+.Outer-order{
+  display: flex;
+  justify-content: center;
+  bottom: 60px;
+  position: relative;
+  right: 39%;
+}
+
+.Home-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Agrandir;
+  background-image: url('./photos/highlight.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
