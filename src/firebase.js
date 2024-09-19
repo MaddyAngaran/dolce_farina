@@ -10,12 +10,12 @@ import{ getDocs } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCPYar0dY-tSrgOhr6LqA8wWOh0meZs-HE",
-  authDomain: "dolce-farina.firebaseapp.com",
-  projectId: "dolce-farina",
-  storageBucket: "dolce-farina.appspot.com",
-  messagingSenderId: "589359093223",
-  appId: "1:589359093223:web:4c0bfde5af669247015942"
+  apiKey: ${{secrets.FIREBASE_API}},
+  authDomain: ${{secrets.FIREBASE_AUTHDOMAIN}},
+  projectId: ${{secrets.FIREBASE_PROJECTID}},
+  storageBucket: ${{secrets.FIREBASE_STORAGE_BUCKET}},
+  messagingSenderId: ${{secrets.FIREBASE_MESSAGINGID}},
+  appId: ${{secrets.FIREBASE_APPID}}
 };
 
 // Initialize Firebase
