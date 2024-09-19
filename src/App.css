@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   background-color: #fffaf4;
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(87, 54, 26);
 }
 
 .App-logo {
@@ -87,12 +91,10 @@
 
 .navbar {
   display: flex;
-  font-family: Agrandir;
   justify-content: space-between;
   align-items: center;
-  padding: 5%;
-  padding-top: 0%;
-  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .navbar h1 {
@@ -100,24 +102,29 @@
   font-size: 75px;
 }
 
+.total-navbar{
+  padding-top: 0%;
+  margin-bottom: 2%;
+}
+
 .nav {
   display: flex;
   gap: 30px;
 }
 
+
 .nav a {
   text-decoration: none;
-  color: #333;
   font-size: 25px;
 }
 
 a:link { 
   text-decoration: none; 
-  color: #000;
+  color: rgb(87, 54, 26);
 } 
 a:visited { 
   text-decoration: none;
-  color: #000; 
+  color: rgb(87, 54, 26);
 } 
 a:hover { 
   text-decoration: none; 
@@ -140,7 +147,6 @@ a:active {
 
 .Order a{
   font-size: xx-large;
-  font-family: Agrandir;
 }
 
 .Outer-order{
@@ -155,8 +161,40 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Agrandir;
   background-image: url('./photos/highlight.png');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+body{
+  background-color: #fffaf4;
+}
+
+.Options button{
+  background-color: #ffeff8;
+  border: 1px solid rgb(87, 54, 26);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  width: 30%;
+  height: 500px;
+  font-size: x-large;
+  font-family: "Bad Script", cursive;
+  color: rgb(87, 54, 26);
+}
+
+.Options img{
+  width: 100%;
+  max-height: 400px;
+}
+
+.Options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Options button:hover{
+  background-color: #fff5f8;
 }

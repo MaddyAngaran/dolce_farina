@@ -25,7 +25,7 @@ function Home(){
                 </div>
             <div className="Outer-order">
                 <div className='Order'>
-                    <a href="https://www.instagram.com/direct/new/?username=dolcefarina_">Order Now</a>
+                    <a href="https://ig.me/m/dolcefarina_">Order Now</a>
                 </div>
             </div>
 
