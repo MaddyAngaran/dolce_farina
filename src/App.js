@@ -33,7 +33,7 @@ function App() {
                     <Link to="/">Home</Link>
                     <Link to="/Products">Products</Link>
                     <Link to="/Pricing">Pricing</Link>
-                    {/* <Link to="/AboutUs">About Us</Link> */}
+                    <Link to="/AboutUs">About Us</Link>
                     <a href="https://ig.me/m/dolcefarina_" target="_blank" rel="noopener noreferrer">Contact</a>
                   </nav>
                 

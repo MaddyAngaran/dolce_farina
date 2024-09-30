@@ -303,3 +303,19 @@ footer{
   display: flex;
   justify-content: center;
 }
+
+.about{
+  font-size: large;
+}
+
+.About-the-twins{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.twins{
+  width: 50%;
+  max-height: 60ex;
+}

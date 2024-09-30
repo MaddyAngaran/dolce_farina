@@ -22,7 +22,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const [selectedFlavour, setSelectedFlavour] = useState([]);
 
-    {/* Get database and fetch data */}
+  // Get database and fetch data
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
