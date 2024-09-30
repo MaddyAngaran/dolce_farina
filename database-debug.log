@@ -1,8 +1,0 @@
-12:03:48.803 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-12:03:48.955 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
-12:03:53.746 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.NamespaceActor - dolce-farina-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 84ms, init: 0ms
-12:03:53.797 [NamespaceSystem-blocking-namespace-operation-dispatcher-7] INFO com.firebase.core.namespace.StateManager - Namespace dolce-farina-default-rtdb status Active to Active
-12:05:09.368 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
-12:05:09.373 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: dolce-farina-default-rtdb
-12:05:09.377 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO com.firebase.core.namespace.NamespaceActor - stopped namespace actor for dolce-farina-default-rtdb
-12:05:09.379 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
