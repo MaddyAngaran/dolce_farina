@@ -5,6 +5,7 @@
   font-weight: 400;
   font-style: normal;
   color: rgb(87, 54, 26);
+  overflow: hidden;
 }
 
 .App-logo {
@@ -24,7 +25,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(60% + 2vmin);
 }
 
 .App-link {
@@ -43,17 +44,47 @@
   display: flex;
   justify-content: center; /* Centers images horizontally */
   align-items: center;     /* Aligns images vertically */
-  gap: 10px;               /* Adjust the space between images */
+  gap: 2%;               /* Adjust the space between images */
+}
+.Product-list .image-container{
+  flex-wrap: wrap;
+}
+
+.Product-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter{
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 45%;
+  font-size: x-large;
+}
+
+.filter button{
+  background-color: #ffeff8;
+  border: 1px solid rgb(87, 54, 26);
+  border-radius: 100%;
+  padding: 25px;
+  font-size: 20px;
+  font-family: "Bad Script", cursive;
+  color: rgb(87, 54, 26);
+}
+
+.Product-list .Photo-album .image-container img{
+  width: 30ex;  /* Set the desired width */
+  height: 50ex; /* Set the desired height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  padding-bottom: 10%;
 }
 
 .image-container img {
-  width: 30ex;  /* Set the desired width */
-  height: 40ex; /* Set the desired height */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
-}
-
-.Photo-album .image-container img{
-  width: 18ex;  /* Set the desired width */
+  width: 18%;  /* Set the desired width */
   height: 20ex; /* Set the desired height */
   object-fit: cover; /* Ensures the image covers the area without distortion */
 }
@@ -66,8 +97,14 @@
 
 .Photo-album{
   border: 1px solid #000; /* Set the border width and color */
-  padding: 2%;
+  padding: 1%;
+  margin-top: 2%;
   background-color:#ffeff8;
+  width: 93%;
+}
+
+.no-product{
+  visibility: hidden;
 }
 
 .image-border{
@@ -80,13 +117,11 @@
   display: flex;
   justify-content: center; /* Centers images horizontally */
   align-items: center;     /* Aligns images vertically */
-  width: 100%;
 }
 
 .banner img{
-  width: 100%;  /* Set the desired width */
-  height: 42.75ex; /* Set the desired height */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 80%;
+  height: 50ex;
 }
 
 .navbar {
@@ -95,16 +130,12 @@
   align-items: center;
   padding-left: 2%;
   padding-right: 2%;
+  flex-wrap: wrap;
 }
 
 .navbar h1 {
   margin: 0;
   font-size: 75px;
-}
-
-.total-navbar{
-  padding-top: 0%;
-  margin-bottom: 2%;
 }
 
 .nav {
@@ -136,13 +167,12 @@ a:active {
 }
 
 .Order{
-  height:100px;
-  width:225px;
   border-radius: 60px;
   background-color:#ffeff8;
   border: 1px solid #000;
   vertical-align: middle;
-  line-height: 100px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .Order a{
@@ -152,9 +182,11 @@ a:active {
 .Outer-order{
   display: flex;
   justify-content: center;
-  bottom: 60px;
+  bottom: 70px;
   position: relative;
-  right: 39%;
+  right: 30%;
+  width: 200%;
+  margin-bottom: 10%;
 }
 
 .Home-header{
@@ -176,25 +208,98 @@ body{
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
+  margin-top: 4%;
   font-size: 20px;
   width: 30%;
-  height: 500px;
+  height: 30ex;
   font-size: x-large;
   font-family: "Bad Script", cursive;
   color: rgb(87, 54, 26);
 }
 
 .Options img{
-  width: 100%;
-  max-height: 400px;
+  width: 90%;
 }
 
 .Options{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;;
 }
 
 .Options button:hover{
   background-color: #fff5f8;
+}
+
+.title{
+  margin-top: 3%;
+}
+
+.filter-menu {
+  width: fit-content;
+  background-color: #ffeff8;
+  padding: 20px;
+  border: 1px solid rgb(87, 54, 26);
+  margin-bottom: 20px;
+
+}
+
+.filter-menu label {
+  padding: 10px;
+}
+
+.done-button{
+  background-color: #fbffef;
+  border: 1px solid rgb(87, 54, 26);
+  border-radius: 5px;
+  padding: 10px;
+  width: 30%;
+  font-size: medium;
+  margin-top: 4%;
+  font-family: "Bad Script", cursive;
+  color: rgb(87, 54, 26);
+}
+
+.center-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-type{
+  text-align: left;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+  font-size: larger
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  margin-top: 5%;
+}
+
+footer{
+  margin-top: 5%;
+}
+
+.Additional-info{
+  font-size: small;
+}
+
+.price-block{
+  border: 1px solid rgb(87, 54, 26);
+  background-color: #ffeff8;
+  width: 95%;
+}
+
+.outer-pricing{
+  display: flex;
+  justify-content: center;
 }

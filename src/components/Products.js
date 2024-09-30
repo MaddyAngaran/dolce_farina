@@ -3,26 +3,33 @@ import '../App.css';
 import cake from '../photos/Cake.png';
 import cookie from '../photos/Cookie.png';
 import other from '../photos/Tirimisu.png';
-
-function cakeClick() {
-  window.location.href = "/Cakes";
-}
-
-function cookieClick() {
-  window.location.href = "/Cookies";
-}
-
-function otherClick() {
-  window.location.href = "/Others";
-}
+import { useNavigate } from 'react-router-dom';
 
 function Products() {
+  const navigate = useNavigate();
+
+  // Function to navigate to the Cakes page
+  function cakeClick() {
+    navigate('/Cakes');
+  }
+
+  // Function to navigate to the Cookies page
+  function cookieClick() {
+    navigate('/Cookies');
+  }
+
+  // Function to navigate to the Others page
+  function otherClick() {
+    navigate('/Others');
+  }
+
   return (
     <div className="App">
       <header>
-        <h1>
+        <h1 className='title'>
           Our Products
         </h1>
+          {/* Button options for product page selection */}
         <div className="Options">
           <button onClick={cakeClick}>Cakes
             <img src={cake} alt="cake" />

@@ -1,6 +1,5 @@
 import orange from '../photos/orange.jpg';
 import blueberry from '../photos/blueberry.jpg';
-import twins from '../photos/twins.jpg';
 
 import cake1 from '../photos/cake1.jpg';
 import cake2 from '../photos/cake2.jpg';
@@ -18,21 +17,21 @@ import cake10 from '../photos/cake10.jpg';
 function Home(){
     return(
         <div className='App-header'>
-                <div class="banner">
+                {/* Banner Image */}
+                <div className="banner">
                     <img src={orange} alt="orange" />
-                    <img src={twins} alt="twins" />
                     <img src={blueberry} alt="blueberry"/>
                 </div>
             <div className="Outer-order">
                 <div className='Order'>
+                      {/* Link leading to instagram */}
                     <a href="https://ig.me/m/dolcefarina_">Order Now</a>
                 </div>
             </div>
-
             <h1 className='Home-header'>Making the community sweeter one day at a time</h1>
             <div className='Photo-album'>
-                <div class="image-border">
-                    <div class="image-container">
+                <div className="image-border">
+                    <div className="image-container">
                         <img src={cake1} alt="cake1" />
                         <img src={cake2} alt="cake2" />
                         <img src={cake3} alt="cake3"/>
@@ -40,8 +39,8 @@ function Home(){
                         <img src={cake5} alt="cake5" />
                     </div>
                 </div>
-                <div class="image-border">
-                    <div class="image-container">
+                <div className="image-border">
+                    <div className="image-container">
                         <img src={cake6} alt="cake6" />
                         <img src={cake7} alt="cake7" />
                         <img src={cake8} alt="cake8"/>
